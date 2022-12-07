@@ -30,6 +30,7 @@ function language() {
         playerScore.innerHTML = score;
         document.querySelector('#languageRightOrWrong').innerHTML = 'Correct!';
     }else{
+        
         document.querySelector('#languageRightOrWrong').innerHTML = 'Nope, the answer is: markup'
     }
 }
