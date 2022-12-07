@@ -3,27 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    
     <title>Quiz Game</title>
+    
 </head>
 <body>
     <h1>Virtual Quiz Game - Functional Playground test</h1>
     <span>Score: <span id="playerScore">0</span></span>
+    <button class="start">Start</button>
 
-    <h2>What controls website styling?</h2>
-    <input type="text" id="stylingAnswer">
-    <button class="styling">Submit</button>
-    <h3 id="stylingRightOrWrong"></h3>
+    <div id="q1" class="hidden">
+        <h2>What controls website styling?</h2>
+        <input type="text" id="stylingAnswer">
+        <button class="styling">Submit</button>
+        <h3 id="stylingRightOrWrong"></h3>
+        <button class="next1">Next</button>
+    </div>
 
-    <h2>What kind of language is HTML and CSS?</h2>
-    <input type="text" id="languageAnswer">
-    <button class="language">Submit</button>
-    <h3 id="languageRightOrWrong"></h3>
+    <div id="q2" class="hidden">
+        <h2>What kind of language is HTML and CSS?</h2>
+        <input type="text" id="languageAnswer">
+        <button class="language">Submit</button>
+        <h3 id="languageRightOrWrong"></h3>
+        <button class="next2">Next</button>
+    </div>
 
-    <h2>An object that has one or more methods has __________.</h2>
-    <input type="text" id="methodAnswer">
-    <button class="method">Submit</button>
-    <h3 id="methodRightOrWrong"></h3>
+    <div id="q3" class="hidden">
+        <h2>An object that has one or more methods has __________.</h2>
+        <input type="text" id="methodAnswer">
+        <button class="method">Submit</button>
+        <h3 id="methodRightOrWrong"></h3>
+        <button class="next3">Next</button>
+    </div>
 
-    <script src='js/main.js'></script>
+    <script src='/js/main.js'></script>
 </body>
 </html>

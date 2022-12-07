@@ -4,11 +4,42 @@ let score = 0;
 
 playerScore.innerHTML = score;
 
+document.querySelector('.start').addEventListener('click', start)
+
+document.querySelector('.next1').addEventListener('click', next1)
+
+document.querySelector('.next2').addEventListener('click', next2)
+
+document.querySelector('.next3').addEventListener('click', next3)
+
 document.querySelector('.styling').addEventListener('click', styling)
 
 document.querySelector('.language').addEventListener('click', language)
 
 document.querySelector('.method').addEventListener('click', method)
+
+
+function start() {
+    document.getElementById('q1').classList.toggle('hidden')
+}
+
+function next1() {
+        document.getElementById('q1').classList.add('hidden');
+
+        document.getElementById('q2').classList.toggle('hidden');
+}
+
+function next2() {
+    document.getElementById('q2').classList.add('hidden');
+
+    document.getElementById('q3').classList.toggle('hidden');
+}
+
+function next3() {
+    document.getElementById('q3').classList.add('hidden');
+
+    document.getElementById('q4').classList.toggle('hidden');
+}
 
 function styling() {
     let stylingAnswer = document.querySelector('#stylingAnswer').value
