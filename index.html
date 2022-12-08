@@ -13,6 +13,7 @@
     <span>Score: <span id="playerScore">0</span></span>
     <button class="start">Start</button>
 
+
     <div id="q1" class="hidden">
         <h2>What controls website styling?</h2>
         <input type="text" id="stylingAnswer">
@@ -36,6 +37,35 @@
         <h3 id="methodRightOrWrong"></h3>
         <button class="next3">Next</button>
     </div>
+
+    <div id="q4" class="hidden">
+        <p class = "questions">What is the function .toString used for?</p>
+        <input type = "radio" id = "toStringAnswer" name = "question3" value = "convert-array"> to convert something into an array<br>
+        <input type = "radio" id = "toStringAnswer" name = "question3" value = "incorrect">to count a string<br>
+        <button class="toString">Submit</button>
+        <h3 id="toStringRightOrWrong"></h3>
+        <button class="next4">Next</button>
+    </div>
+
+    <div id="q5" class="hidden">
+        <p class = "questions">What is the function .length used for?</p>
+        <input type = "radio" id = "lengthFunctionAnswer" name = "question4" value = "string/array"> To measure the length of a string/array <br>
+        <input type = "radio" id = "lengthFunctionAnswer" name = "question4" value = "incorrect"> To convert something into an Array<br>
+        <button class="lengthSubmit">Submit</button>
+        <h3 id="lengthRightOrWrong"></h3>
+        <button class="next5">Next</button>
+    </div>
+
+    <div id="q6" class="hidden">
+        <p class = "questions">What is the function .toLowerCase used for?</p>
+        <input type = "radio" id = "lowerCaseAnswer" name = "question5" value = "string-lower"> Changes all the letters in the strings to lowercase  <br>
+        <input type = "radio" id = "lowerCaseAnswer" name = "question5" value = "incorrect"> To trim out white spaces in a string<br>
+        <button class="lowerCaseSubmit">Submit</button>
+        <h3 id="lowerCaseRightOrWrong"></h3>
+        <!-- <button class="next5">Next</button> -->
+    </div>
+
+
 
     <script src='/js/main.js'></script>
 </body>

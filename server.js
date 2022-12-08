@@ -7,15 +7,7 @@ app.use(express.static(__dirname + '/public'))
 
 const PORT = 8000
 
-const answerBank = {
-    'styling': {
-        'html': 'Correct!',
-        'wrong': 'Nope, answer is HTML'
-    },
-    'wrong': {
-        
-    }
-}
+
 
 app.get('/', (request, response) => {
     response.sendFile(__dirname + '/index.html')
